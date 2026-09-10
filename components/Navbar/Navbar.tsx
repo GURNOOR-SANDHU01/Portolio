@@ -31,11 +31,11 @@ export default function Navbar() {
       </div>
 
       <a
-        href="#contact"
-        className="rounded-full bg-white px-4 py-2 text-xs font-medium text-black transition-transform hover:scale-105"
-      >
-        Let's talk
-      </a>
+  href="#contact"
+  className="nav-talk"
+>
+  Let's talk
+</a>
     </nav>
   );
 }

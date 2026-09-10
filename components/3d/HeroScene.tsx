@@ -6,33 +6,33 @@ import Avatar from "./Avatar";
 
 export default function HeroScene() {
   return (
-    <div className="absolute inset-0">
+    <div className="avatar-scene">
       <Canvas
-        dpr={[1, 2]}
         camera={{
           position: [0, 0.8, 6],
-          fov: 32,
+          fov: 35,
         }}
+        dpr={[1, 2]}
         gl={{
           antialias: true,
           alpha: true,
         }}
       >
-        <ambientLight intensity={1.5} />
+        <ambientLight intensity={1.2} />
 
         <directionalLight
           position={[3, 5, 4]}
-          intensity={2.5}
+          intensity={2}
         />
 
         <directionalLight
-          position={[-4, 2, 3]}
-          intensity={1}
+          position={[-3, 2, 2]}
+          intensity={0.7}
         />
 
-        <Avatar />
-
         <Environment preset="city" />
+
+        <Avatar />
       </Canvas>
     </div>
   );
