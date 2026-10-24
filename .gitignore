@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local working files (originals of what's in public/, and the design reference)
+/image.png
+/gurnoor-image.png
+/meet_ai.pdf
